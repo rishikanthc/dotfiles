@@ -32,7 +32,7 @@ bottom                   = false
 border-top-size		 = 5
 border-left-size	 = 5
 border-right-size	 = 5
-border-bottom-size	 = 1
+border-bottom-size	 = 2
 padding-left             = 0
 padding-right            = 0
 module-margin-left       = 2
@@ -41,11 +41,11 @@ separator = .
 
 fixed-center = true
 font-0 = San Francisco Display Regular:size=13;1
-font-1 = unifont:fontformat=truetype:size=24:antialias=false;0
-font-2 = "MaterialIcons:size=24:antialias=false;1"
-font-3 = "icomoon-extended-ultra:size=24:antialias=false;1"
-font-4 = "Ubuntu Nerd Font:size=24:antialias=false;1"
-font-5 = FontAwesome:size=24;1
+font-1 = unifont:fontformat=truetype:size=13:antialias=false;0
+font-2 = "MaterialIcons:size=13:antialias=false;1"
+font-3 = "icomoon-extended-ultra:size=13:antialias=false;1"
+font-4 = "Ubuntu Nerd Font:size=13:antialias=false;1"
+font-5 = FontAwesome:size=13;1
 
 modules-left = player-mpris-tail
 modules-center = i3
@@ -170,7 +170,7 @@ label-urgent-foreground = #ff0000
 
 [module/player-mpris-tail]
 type = custom/script
-exec = ~/.config/polybar/player-mpris-tail.py --icon-playing  --icon-paused  --icon-stopped  --icon-none  -f '  {:artist:t18:{artist}:}{:artist:: :}{:t40:{title}:}'
+exec = ~/.config/polybar/player-mpris-tail.py --icon-playing  --icon-paused  --icon-stopped   --icon-none  -f '  {:artist:t18:{artist}:}{:artist:: :}{:t40:{title}:}'
 tail = true
 label =  %output:0:305%
 click-left = playerctl play-pause
